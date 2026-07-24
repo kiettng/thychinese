@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thy Chinese - Học tiếng Trung mỗi ngày</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-yin-yang"></i>
+                <span>Thy Chinese</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <div class="nav-group">
+                    <p class="nav-title">CẤP ĐỘ</p>
+                    <select id="level-selector" class="level-select">
+                        <option value="hsk1">HSK 1</option>
+                        <option value="hsk2">HSK 2</option>
+                        <option value="hsk3">HSK 3</option>
+                        <option value="hsk4">HSK 4</option>
+                        <option value="hsk5">HSK 5</option>
+                        <option value="hsk6">HSK 6</option>
+                    </select>
+                </div>
+
+                <div class="nav-group">
+                    <p class="nav-title">HỌC TẬP</p>
+                    <a href="#" class="nav-item active" data-view="dashboard">
+                        <i class="fa-solid fa-house"></i> Trang chủ
+                    </a>
+                    <a href="#" class="nav-item" data-view="vocabulary">
+                        <i class="fa-solid fa-book"></i> Từ vựng
+                    </a>
+                    <a href="#" class="nav-item" data-view="grammar">
+                        <i class="fa-solid fa-pen-nib"></i> Ngữ pháp
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h1 id="page-title">Trang chủ</h1>
+                <div class="user-profile">
+                    <div class="avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-area" id="content-area">
+                <!-- Views will be injected here via JS -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
